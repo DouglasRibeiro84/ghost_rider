@@ -1,0 +1,21 @@
+.assistir{
+    padding: 5.6vw;
+    padding-top: 0;
+    text-align: center;
+
+    &__lista{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+
+        &__item{
+            padding: 12px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+    }
+}

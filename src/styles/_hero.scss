@@ -1,0 +1,53 @@
+@use 'variaveis';
+
+.hero{
+    margin-top: -72px;
+    padding: 5.6vw;
+    min-height: 60vh;
+    background-image: url(../images/hero_ghost_rider.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-size: 380px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        background-image: url(../images/hero_ghost_rider_mobile.png);
+        background-size: contain;
+        padding-top: 150vw;
+        margin-top: -70vw;
+    }
+
+        &__content{
+            max-width: 640px;
+
+            &__branding{
+                max-width: 300px;
+                margin: 0 auto;
+                img{
+                    width: 280px;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                font-family: variaveis.$fontSecundaria;
+                padding: 8px 12px;
+                background-color: variaveis.$corButton;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 4px;
+                border: 2px solid variaveis.$corButton;
+                transition: ease .7s;
+
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid variaveis.$corButton;
+                    transition: ease .7s;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+}

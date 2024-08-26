@@ -1,5 +1,8 @@
 @use 'variaveis';
 @use 'header';
+@use 'hero';
+@use 'sobre';
+@use 'assitir';
 
 *{
     margin: 0;
@@ -11,4 +14,30 @@ body {
     background-color: variaveis.$corFundo;
     color: variaveis.$corTextoPrimario ;
     font-family: variaveis.$fontPrimaria;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid variaveis.$corTextoPrimario;
+}
+
+@mixin text ($fontSize: 16px) {
+
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrimario;
+
+}
+
+.text--big{
+    @include text (18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small {
+    @include text (12px);
 }

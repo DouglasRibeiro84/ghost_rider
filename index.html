@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghost Rider</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+
 <body>
-    <header class="header">
+    <header class="header header--is-hidden">
         <div class="header__container">
-            <img src="./dist/images/ghost_logo.png" alt="logo do site">
             <h1>
                 Ghost Rider
             </h1>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h2 class="hero__content__branding">
+                <img src="./dist/images/logo_hero.jpeg" alt=" logo do motoqueiro fantasma">
+            </h2>
+            <a class="text--big" href="#assistir">Onde assistir?</a>
+        </div>
+    </section>
+    <section class="sobre">
+        <article class="sobre__trailer">
+            <div class="sobre__trailer__texto">
+                <h2>
+                    Sobre o filme:
+                </h2>
+                <p class="text">
+                    O primeiro filme do Motoqueiro Fantasma, lançado em 2007, é uma adaptação das histórias em
+                    quadrinhos da Marvel e é estrelado por Nicolas Cage como Johnny Blaze, o protagonista.
+                </p>
+            </div>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/nu6R7ypaz5g?si=afq_iuXdQxKBPr_W"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+        <article class="sobre__sinopse">
+            <h3>
+                Sinopse:
+            </h3>
+            <p class="text">
+                Johnny Blaze é um jovem motociclista talentoso e destemido, apaixonado por sua namorada, Roxanne
+                Simpson. Seu pai, Barton Blaze, é um artista de motos que participa de competições. Quando Barton está
+                gravemente doente, Johnny faz um pacto desesperado com Mefisto, o Senhor do Inferno, prometendo entregar
+                sua alma em troca da cura para seu pai. No entanto, o pacto é enganoso: Barton Blaze acaba morrendo em
+                um acidente e Johnny descobre que sua alma foi, na verdade, marcada para o Inferno.
+
+                Anos depois, Johnny Blaze se tornou um famoso motociclista de acrobacias, mas é assombrado pela culpa e
+                pelo desejo de se redimir. Ele descobre que Mefisto planeja usar o filho dele, Blackheart, para criar um
+                exército de demônios e dominar o mundo. Mefisto, portanto, oferece a Johnny uma oportunidade de
+                redenção: destruir Blackheart e seus asseclas.
+
+                Quando Johnny Blaze é manipulado por Mefisto, ele se transforma no Motoqueiro Fantasma, um anti-herói
+                com habilidades sobrenaturais, incluindo a capacidade de queimar o mal com um olhar. Agora, Johnny deve
+                enfrentar seus próprios demônios, literalmente e figurativamente, para impedir que Blackheart alcance
+                seus objetivos malignos.
+            </p>
+        </article>
+    </section>
+    <section class="assistir" id="assistir">
+        <h2>
+            Onde assistir?
+        </h2>
+        <ul class="assistir__lista">
+            <li class="assistir__lista__item">
+                <a href=""></a>
+                <img src="https://th.bing.com/th/id/OIP.V47TNfRpqO0huQ3CPtEjdAHaHa?w=165&h=180&c=7&r=0&o=5&pid=1.7"
+                    alt="">
+            </li>
+            <li class="assistir__lista__item">
+                <a href="">
+                    <img src="https://th.bing.com/th/id/OIP.28BDS6egi0sSIdEhqLuXhwHaE6?w=224&h=180&c=7&r=0&o=5&pid=1.7"
+                        alt="">
+                </a>
+            </li>
+            <li class="assistir__lista__item">
+                <a href="">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+    <footer class="text--small">
+        &COPY;todos direitos reservados
+    </footer>
 </body>
+<script src="./dist/js/main.js"></script>
 </html>

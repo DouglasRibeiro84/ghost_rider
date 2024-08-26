@@ -1,22 +1,26 @@
 @use 'variaveis';
 
 .header{
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.568);
+    transition: opacity ease 1.5s;
+
+    &--is-hidden{
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity ease 1.5s;
+    }
+
     &__container{
-        width: 100%;
-        border-bottom: 3px double white;
-        align-items: center;
-
-        display: flex;
-
-        img{
-            width: 10vh;
-        }
+        padding: 8px 36px;
+        border-bottom: 3px solid white;
+        text-align: center;
 
         h1{
             font-family: variaveis.$fontSecundaria;
             font-weight: bold;
-            padding-top: 10px;
-            font-size: 48px;
+            font-size: 42px;
         }
     }
 }
